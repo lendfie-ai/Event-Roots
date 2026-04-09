@@ -238,13 +238,13 @@
           Apple / Outlook (.ics)
         </button>
       </div>
-      <p class="footer-note">Questions? Email <a href="mailto:lotte@rootspartners.eu">lotte@rootspartners.eu/a></p>
+      <p class="footer-note">Questions? Email <a href="mailto:lotte@rootspartners.eu">lotte@rootspartners.eu</a></p>
     </div>
 
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var guestCount = 0;
 var kidCount = 0;
 
@@ -384,12 +384,4 @@ function downloadICS() {
     'END:VEVENT',
     'END:VCALENDAR'
   ].join('\r\n');
-  var blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
-  var url = URL.createObjectURL(blob);
-  var a = document.createElement('a');
-  a.href = url; a.download = 'roots-investor-evening.ics'; a.click();
-  URL.revokeObjectURL(url);
-}
-</script>
-</body>
-</html>
+  var blob = new Blob([ics], { type: 'text/cale
